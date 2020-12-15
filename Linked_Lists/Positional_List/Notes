@@ -1,0 +1,7 @@
+Positional List
+Finding a position within a data structure is imminent for its application. Using indices based approach is not efficient
+as indices may change in real time as new elements get inserted or deleted.
+That is why, a cursor can be implemented in the list to obtain its relevant position within the list.
+and Hence, Positional list is implemented.
+
+

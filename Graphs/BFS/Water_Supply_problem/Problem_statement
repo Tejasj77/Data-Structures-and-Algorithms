@@ -1,0 +1,24 @@
+Given N cities which are connected using N-1 roads. Between Cities [i, i+1], there exists an edge for all i from 1 to N-1.
+
+The task is to set up a connection for water supply. Set the water supply in one city and
+water gets transported from it to other cities using road transport.
+Certain cities are blocked which means that water cannot pass through that particular city.
+ Determine the maximum number of cities to which water can be supplied.
+
+Input format:
+
+The first line contains an integer >strong>N denoting the number of cities.
+The next N-1 lines contain two space-separated integers u v denoting a road between
+city u and v.
+The next line contains N space-separated integers where it is 1 if the ith city is
+blocked, else it is 0.
+
+Importants points :
+
+1. Water supply can start from any City
+2. Even if the city is blocked, water can still reach there only does not go further.
+
+Personal notes :
+1. My BFS algorithm makes changes to the actual node structures. That is why, I have to reinitialise.
+2. After creation of nodes actually pass them in order to utilise inheritance
+3. When using dunder methods __iter__, make sure "for iter in range" is not used in bare code to avoid TypeError
